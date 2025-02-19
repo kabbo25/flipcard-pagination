@@ -1,4 +1,9 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.App{
+  display: flex;
+  flex-direction: column;
+}
+.product-container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -49,4 +54,38 @@
 }
 .original-price {
   text-decoration: line-through;
+}
+.pagination-container{
+  display: flex;
+  /*background-color: red;*/
+  justify-content: space-between;
+  padding: 10px;
+}
+.current-page-container{
+  color: black;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+.total-page-container{
+  color: black;
+  /*background-color: green;*/
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.page-number {
+  margin-right: 20px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  background-color: white;
+}
+.page-number:hover{
+  background-color: lightblue;
+}
+.active{
+  background-color: lightblue;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
 }
