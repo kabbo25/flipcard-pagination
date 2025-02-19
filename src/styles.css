@@ -1,0 +1,52 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 5px;
+  width: 220px;
+}
+.image-container {
+  /* background-color: red; */
+  width: 200px;
+  height: 200px;
+}
+.card-description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.price-section {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+.discount-percentage {
+  color: rgb(46, 127, 11);
+  font-weight: bold;
+}
+.available-status {
+  background-color: rgb(235, 255, 235);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 2px 6px;
+  margin: 2px 0px;
+  align-self: flex-start;
+}
+.low-stock-text{
+  color: red;
+}
+.in-stock-text{
+  color: green;
+}
+.card-description:hover {
+  transform: translateY(-26px);
+  cursor: pointer;
+}
+.original-price {
+  text-decoration: line-through;
+}
